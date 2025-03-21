@@ -41,12 +41,27 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Contact Form Handling
-    const form = document.getElementById('contact-form');
-    if (form) {
-        form.addEventListener('submit', function(event) {
-            event.preventDefault();
-            alert('Thank you for your message! (This is a demo, no actual submission.)');
-            form.reset();
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Stop the form from refreshing the page
+        const form = event.target;
+      
+        fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+        .then(response => {
+          if (response.ok) {
+            alert('Thank you! Your message has been sent successfully.');
+            form.reset(); // Clear the form after submission
+          } else {
+            alert('Oops! There was a problem sending your message. Please try again.');
+          }
+        })
+        .catch(error => {
+          alert('Error: ' + error.message);
         });
-    }
+      });
 });
