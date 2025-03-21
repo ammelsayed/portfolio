@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Publication Title 1",
+        "date": "2022-05-10",
+        "description": "A brief description of the publication.",
+        "link": "https://example.com/publication1"
+    },
+    {
+        "title": "Publication Title 2",
+        "date": "2023-03-20",
+        "description": "Another publication description.",
+        "link": "https://example.com/publication2"
+    }
+]
