@@ -34,10 +34,10 @@ section {
 #page-title {
     max-width: 1000px;
     font-size: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     background-color: white;
     box-shadow:none
 }
@@ -45,4 +45,48 @@ section {
 section p{
     font-size: 18px;
     font-family: 'Times New Roman', Times, serif;
+}
+
+#abstract{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.publication-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.publication-content {
+    order: 0;
+    width: 69%;  /* Adjust this value as needed */
+}
+
+.publication-image {
+    width: 29%;      /* Fixed width */
+    height: auto;     /* Fixed height */
+    min-height: 200px;
+    object-fit: cover; /* Ensures the image fills the box while preserving aspect ratio */
+    object-position: left top;
+}
+
+/* Styles for screens below 1000px */
+@media screen and (max-width: 1000px) {
+    .publication-container {
+        flex-direction: column;
+        align-items: flex-start;  /* Aligns content to the left */
+    }
+    .publication-content {
+        order: 0;
+        width: 100%;
+    }
+    .publication-image {
+        order: 1;
+        width: 100%;         /* Scale to the container's width */
+        height: auto; /* Adjust height automatically */
+        max-height: 200px;       
+        object-fit: contain; /* Ensures the entire image is visible */
+    }
 }

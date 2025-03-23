@@ -28,7 +28,7 @@ header {
     margin: 0;
     padding: 0;
     display: flex;          /* Lay out items horizontally */
-    gap: 70px;              /* Add spacing between items */
+    gap: 40px;              /* Add spacing between items */
   }
 
 /* make the Navigation links with white text color */
