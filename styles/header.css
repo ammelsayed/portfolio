@@ -1,0 +1,70 @@
+/* Header Settings */
+
+header {
+    background-color: navy; 
+    color: white;
+    padding: 10px 0px; /* Add some space in (top& bottom) and (left&right) */
+    width: 100%; /* To take all width of the page */
+
+    display: flex;
+    justify-content: space-between; /* centers horizontally */
+    align-items: center;    /* centers vertically */
+
+    gap: 20px;  /* Gap some distance between the logo, links and the toggle menu
+                    note that same gap must be used for bullets */
+}
+
+/* to edit the logo */
+.logo {
+    width: 100px;
+    height: auto; /* Maintains aspect ratio */
+    padding-left:20px;
+
+    filter: brightness(0) saturate(100%) invert(1); /* to make logo white*/
+}
+
+.headings-nav ul {
+    list-style: none;       /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex;          /* Lay out items horizontally */
+    gap: 70px;              /* Add spacing between items */
+  }
+
+/* make the Navigation links with white text color */
+.headings-nav ul li a {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+.headings-nav ul li a:hover {
+    color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+    border-top: 10px solid white;
+    padding-top: 19px;
+    padding-bottom: 18px;
+  }
+
+@media screen and (max-width: 1150px) {
+    .headings-nav {
+      display: none;
+    }
+  }
+
+.menu {
+    margin-right:20px; 
+    background-color: rgb(1, 1, 189);    /* Dark background */
+    color: white;              /* White icon */
+    font-size: 18px;           /* Increase icon size */
+    padding: 10px 50px;        /* Space around the icon */
+    border: none;              /* Remove default border */
+    border-radius: 20px;        /* Rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+  }
+  
+  /* Simple hover effect */
+.menu:hover {
+    background-color: blue;    /* Slightly lighter on hover */
+}

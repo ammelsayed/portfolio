@@ -1,0 +1,15 @@
+
+/* Footer styling */
+
+footer {
+    background-color: navy;
+    color: white;
+    padding: 5px 0px;
+    width: 100%; /* To take all width of the page */
+
+    font-family: Arial, Helvetica, sans-serif;
+    
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;    /* centers vertically */
+}

@@ -1,0 +1,48 @@
+/*---------------------------------------*\ 
+    AUTHOR: A.M.M. Elsayed   
+    * ALL RIGHTS RESERVED *
+\*---------------------------------------*/
+
+/*  this is for all the elements in the html file 
+    Here we chose to set zero distance between the
+    browser borders and the elements borders
+*/
+html, body {
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body main {
+    margin: 10px;   /* Space outside the border */
+    padding: 10px;  /* Space inside the border, between content and border */
+
+    flex: 1; /* Fills available space */
+}
+
+section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#page-title {
+    max-width: 1000px;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    box-shadow:none
+}
+
+section p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
