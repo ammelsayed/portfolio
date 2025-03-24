@@ -25,14 +25,14 @@ footer {
     padding: 10px 20px;        /* Space around the icon */
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 18px;
     border-radius: 40px;        /* Rounded corners */
-    background-color: aliceblue;
 }
 
 .social-links a img {
     width: 25px;
     height: 25px;
+    filter: brightness(0) saturate(100%) invert(1); /* to make logo white*/
 }
 
 
