@@ -1,6 +1,8 @@
+
 <!-- /* ------------------------------- *\ -->
 <!-- /*     AUTHOR: A.M.M. Elsayed      *\ -->
 <!-- /*    * ALL RIGHTS RESERVED *      *\ -->
+<!-- /* ------------------------------- *\ -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,44 +30,92 @@
 
     <!--A Header with links-->
     <header>
-        <img src="images/logo.png" alt="Logo" class="logo">
-        <nav class="headings-nav">
-            <ul>
-                <li>
-                    <a href= "./index.html">
-                        HOME
-                    </a>
-                </li>
-                <li>
-                    <a href="./about.html">
-                        ABOUT
-                    </a>
-                </li>
-                <li>
-                    <a href="./publications.html"  style="border-top: 10px solid white; padding-top: 19px">
-                        <strong>PUBLICATIONS</strong>
-                    </a>
-                </li>
-                <li>
-                    <a href="./blog.html">
-                        BLOG
-                    </a>
-                </li>
-                <li>
-                    <a href="./cv.html">
-                        CV
-                    </a>
-                </li>
-                <li>
-                    <a href="./contact_me.html">
-                        CONTACT
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <button id="menu" class="menu" aria-label="Menu">
-        Menu
-        </button>
+        <div class="header-links">
+            <img src="images/logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href= "./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./publications.html" style="border-top: 10px solid white; padding-top: 19px">
+                            <strong>Publications</strong>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./events.html">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./cv.html">
+                            CV
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contact_me.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-menu">
+            <button>Menu</button>
+            <nav>
+                <ul>
+                    <li>
+                        <a href= "./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./publications.html">
+                            Publications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./events.html">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./cv.html">
+                            CV
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contact_me.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <script src="./menu.js"></script>
     </header>
 
     <main>
@@ -76,10 +126,15 @@
         <div id="publications-list">
         </div>
     </main>
-
+    
     <footer>
-        <p>&copy 2025 <strong>A.M.M. Elsayed</strong>. All rights reserved.</p>
+        <p style="padding-left:40px;">
+            &copy 2025 <strong>A.M.M. Elsayed</strong>. All rights reserved.
+        </p>
+        <div class="social-links"></div>
     </footer>
+    <script src="user/upload_social_links.js"></script>
+
     <script src="publications/script.js"></script>
 </body>
 </html>

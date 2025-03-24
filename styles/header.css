@@ -1,4 +1,7 @@
-/* Header Settings */
+/*---------------------------------------*\ 
+    AUTHOR: A.M.M. Elsayed   
+    * ALL RIGHTS RESERVED *
+\*---------------------------------------*/
 
 header {
     background-color: navy; 
@@ -12,34 +15,44 @@ header {
 
     gap: 20px;  /* Gap some distance between the logo, links and the toggle menu
                     note that same gap must be used for bullets */
+
+    border-radius: 40px;        /* Rounded corners */
+}
+
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.header-links {
+  display: flex;
+  align-items: center;    /* centers vertically */
+  gap: 50px; 
 }
 
 /* to edit the logo */
-.logo {
+.header-links img {
     width: 100px;
     height: auto; /* Maintains aspect ratio */
-    padding-left:20px;
+    margin-left:40px;
 
     filter: brightness(0) saturate(100%) invert(1); /* to make logo white*/
 }
 
-.headings-nav ul {
+.header-links nav ul {
     list-style: none;       /* Remove bullets */
     margin: 0;
     padding: 0;
-    display: flex;          /* Lay out items horizontally */
+    display: flex;
     gap: 40px;              /* Add spacing between items */
   }
 
 /* make the Navigation links with white text color */
-.headings-nav ul li a {
+.header-links nav ul li a {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     font-size: 18px;
   }
 
-.headings-nav ul li a:hover {
+.header-links nav ul li a:hover {
     color: lightblue;
     font-family: Arial, Helvetica, sans-serif;
     border-top: 10px solid white;
@@ -48,23 +61,58 @@ header {
   }
 
 @media screen and (max-width: 1150px) {
-    .headings-nav {
+    .header-links nav {
       display: none;
     }
   }
 
-.menu {
-    margin-right:20px; 
-    background-color: rgb(1, 1, 189);    /* Dark background */
-    color: white;              /* White icon */
-    font-size: 18px;           /* Increase icon size */
-    padding: 10px 50px;        /* Space around the icon */
-    border: none;              /* Remove default border */
-    border-radius: 20px;        /* Rounded corners */
-    cursor: pointer;           /* Pointer cursor on hover */
+/*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+
+.header-menu nav ul{
+  display:none;
+  list-style: none;   /* Remove bullets */
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background-color: blue;
+  width: 150px;
+}
+
+/* Each list item with a border below */
+.header-menu nav ul li {
+  padding-left: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-menu nav ul li:hover{
+  background-color: rgb(62, 62, 255);
+  border-top: 0.5px solid rgb(239, 239, 239);
+  border-bottom: 0.5px solid rgb(239, 239, 239);
+}
+
+.header-menu nav ul li a{
+  display: block;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none; /* Remove underline if needed */
+}
+
+.header-menu button {
+  width: 150px;
+  margin-right:40px; 
+  background-color: rgb(1, 1, 189);    /* Dark background */
+  color: white;              /* White icon */
+  font-size: 18px;           /* Increase icon size */
+  padding: 10px 50px;        /* Space around the icon */
+  border: none;              /* Remove default border */
+  border-radius: 20px;        /* Rounded corners */
+  cursor: pointer;           /* Pointer cursor on hover */
+}
+
+@media screen and (min-width: 1150px) {
+  .header-menu button {
+    display: none;
   }
-  
-  /* Simple hover effect */
-.menu:hover {
-    background-color: blue;    /* Slightly lighter on hover */
 }

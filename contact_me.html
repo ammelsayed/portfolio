@@ -1,3 +1,9 @@
+
+<!-- /* ------------------------------- *\ -->
+<!-- /*     AUTHOR: A.M.M. Elsayed      *\ -->
+<!-- /*    * ALL RIGHTS RESERVED *      *\ -->
+<!-- /* ------------------------------- *\ -->
+ 
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,8 +14,8 @@
 
     <title>A.M.M. Elsayed</title>
 
-    <!--Browser Tap icon-->
-    <link rel="icon" href="https://s3.amazonaws.com/static.graphemica.com/glyphs/i300s/000/011/016/original/039B-300x300.png?1275329315">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
     <!--Body and Body-Main styles-->
     <link rel="stylesheet" href="contact_me/contact_me.css">
@@ -24,49 +30,112 @@
 
     <!--A Header with links-->
     <header>
-        <img src="images/logo.png" alt="Logo" class="logo">
-        <nav class="headings-nav">
-            <ul>
-                <li>
-                    <a href= "./index.html">
-                        HOME
-                    </a>
-                </li>
-                <li>
-                    <a href="./about.html">
-                        ABOUT
-                    </a>
-                </li>
-                <li>
-                    <a href="./publications.html">
-                        PUBLICATIONS
-                    </a>
-                </li>
-                <li>
-                    <a href="./blog.html">
-                        BLOG
-                    </a>
-                </li>
-                <li>
-                    <a href="./cv.html">
-                        CV
-                    </a>
-                </li>
-                <li>
-                    <a href="./contact_me.html"  style="border-top: 10px solid white; padding-top: 19px">
-                        <strong>CONTACT</strong>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <button id="menu" class="menu" aria-label="Menu">
-        Menu
-        </button>
+        <div class="header-links">
+            <img src="images/logo.png" alt="Logo">
+            <nav>
+                <ul>
+                    <li>
+                        <a href= "./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./publications.html">
+                            Publications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./events.html">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./cv.html">
+                            CV
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contact_me.html" style="border-top: 10px solid white; padding-top: 19px">
+                            <strong>Contact</strong>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-menu">
+            <button>Menu</button>
+            <nav>
+                <ul>
+                    <li>
+                        <a href= "./index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./publications.html">
+                            Publications
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./events.html">
+                            Events
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./cv.html">
+                            CV
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contact_me.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <script src="./menu.js"></script>
     </header>
 
     <main>
         <section id="page-title">
             <h1>Contact Me</h1>
+        </section>
+        <!-- New Contact Details Section -->
+        <section id="contact-details">
+            <div class="info-item">
+                <img id="email-icon" src="" alt="Email Icon">
+                <span id="email"></span>
+            </div>
+            <div class="info-item">
+                <img id="phone-icon" src="" alt="Phone Icon">
+                <span id="phone"></span>
+            </div>
+            <div class="info-item">
+                <img id="address-icon" src="" alt="Address Icon">
+                <span id="address"></span>
+            </div>
         </section>
         <section>
             <form id="contact-form" action="https://formspree.io/f/mvgkkbvg?" method="POST">
@@ -83,9 +152,14 @@
     </main>
 
     <footer>
-        <p>&copy 2025 <strong>A.M.M. Elsayed</strong>. All rights reserved.</p>
+        <p style="padding-left:40px;">
+            &copy 2025 <strong>A.M.M. Elsayed</strong>. All rights reserved.
+        </p>
+        <div class="social-links"></div>
     </footer>
+    <script src="user/upload_social_links.js"></script>
 
+    <script src="user/upload_contact_info.js"></script>
     <script src="contact_me/contact_me.js"></script>
 </body>
 </html>
