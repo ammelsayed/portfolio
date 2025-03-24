@@ -28,6 +28,16 @@ body main {
     flex: 1; /* Fills available space */
 }
 
+.header-links nav ul li #cv {
+    border-top: 5px solid white;
+    padding-top: 18px;
+    font-weight: bold;
+}
+
+.header-menu nav ul li #cv {
+    font-weight: bold;
+}
+
 section {
     max-width: 1000px;
     margin: 20px auto;

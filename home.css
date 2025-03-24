@@ -27,6 +27,16 @@ body main {
     flex: 1; /* Fills available space */
 }
 
+.header-links nav ul li #home {
+    border-top: 5px solid white;
+    padding-top: 18px;
+    font-weight: bold;
+}
+
+.header-menu nav ul li #home {
+    font-weight: bold;
+}
+
 #intro {
     max-width: 1000px;
     margin: 20px auto;

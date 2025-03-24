@@ -17,6 +17,8 @@ header {
                     note that same gap must be used for bullets */
 
     border-radius: 40px;        /* Rounded corners */
+
+    box-shadow: 0 0 50px rgba(0,0,0,0.3); /* border shadows */
 }
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
@@ -47,17 +49,14 @@ header {
 /* make the Navigation links with white text color */
 .header-links nav ul li a {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     text-decoration: none;
     font-size: 18px;
   }
 
 .header-links nav ul li a:hover {
-    color: lightblue;
-    font-family: Arial, Helvetica, sans-serif;
-    border-top: 10px solid white;
-    padding-top: 19px;
-    padding-bottom: 18px;
+    border-top: 5px solid white;
+    padding-top: 18px;
   }
 
 @media screen and (max-width: 1150px) {
@@ -71,10 +70,10 @@ header {
 .header-menu nav ul{
   display:none;
   list-style: none;   /* Remove bullets */
-  margin: 0;
+  margin:0;
   padding: 0;
   position: absolute;
-  background-color: blue;
+  background-color: navy;
   width: 150px;
 }
 
@@ -102,13 +101,32 @@ header {
 .header-menu button {
   width: 150px;
   margin-right:40px; 
-  background-color: rgb(1, 1, 189);    /* Dark background */
+  background-color: navy;    /* Dark background */
   color: white;              /* White icon */
   font-size: 18px;           /* Increase icon size */
   padding: 10px 50px;        /* Space around the icon */
   border: none;              /* Remove default border */
   border-radius: 20px;        /* Rounded corners */
   cursor: pointer;           /* Pointer cursor on hover */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header-menu button .line {
+  width: 60px;
+  height: 2px;
+  background-color: white;
+  margin: 3px;
+  transition: width 0.5s ease, margin 0.8s ease, height 1s ease;
+}
+
+.header-menu button:hover .line,
+.header-menu button.active .line  {
+  width: 150px;
+  margin: 0;
+  height: 1px;
 }
 
 @media screen and (min-width: 1150px) {
