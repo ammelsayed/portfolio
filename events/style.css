@@ -8,56 +8,7 @@
     browser borders and the elements borders
 */
 
-html, body {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-    background-color: rgb(247, 251, 255);
-}
-
-body main {
-    margin: 10px;   /* Space outside the border */
-    padding: 10px;  /* Space inside the border, between content and border */
-
-    flex: 1; /* Fills available space */
-}
-
-.header-links nav ul li #events {
-    border-top: 5px solid white;
-    padding-top: 18px;
+.navigations nav ul li #events {
     font-weight: bold;
 }
 
-.header-menu nav ul li #events {
-    font-weight: bold;
-}
-
-section {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-#page-title {
-    max-width: 1000px;
-    font-size: 30px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow:none
-}
-
-section p{
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-}

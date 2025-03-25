@@ -23,104 +23,15 @@
     <!--Header and footer stylings-->
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/bodies.css">
 
 </head>
 
 <body>
 
-    <!--A Header with links-->
-    <header>
-        <div class="header-links">
-            <img src="images/logo.png" alt="Logo">
-            <nav>
-                <ul>
-                    <li>
-                        <a href= "./index.html" id="home">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./about.html" id="about">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./publications.html" id="publications">
-                            Publications
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./events.html" id="events">
-                            Events
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./blog.html" id="blog">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./cv.html" id="cv">
-                            CV
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./contact_me.html" id="contact_me">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-
-        <div class="header-menu">
-            <button>
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </button>
-            <nav>
-                <ul>
-                    <li>
-                        <a href= "./index.html" id="home">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./about.html" id="about">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./publications.html" id="publications">
-                            Publications
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./events.html" id="events">
-                            Events
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./blog.html" id="blog">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./cv.html" id="cv">
-                            CV
-                        </a>
-                    </li>
-                    <li>
-                        <a href="./contact_me.html" id="contact_me">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <script src="./menu.js"></script>
-    </header>
+    <my-header></my-header>
+    <script type="module" src="styles/header.js"></script>
+    <script src="menu.js"></script>
 
     <main>
         <section id="page-title">
@@ -131,14 +42,9 @@
         </section>
     </main>
     
-    <footer>
-        <p style="padding-left:40px;">
-            &copy 2025 <strong>A.M.M. Elsayed</strong>. All rights reserved.
-        </p>
-        <div class="social-links"></div>
-    </footer>
+    <my-footer></my-footer>
+    <script type="module" src="styles/footer.js"></script>
     <script src="user/upload_social_links.js"></script>
-
-    
+      
 </body>
 </html>

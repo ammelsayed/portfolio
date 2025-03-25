@@ -3,57 +3,24 @@
     * ALL RIGHTS RESERVED *
 \*---------------------------------------*/
 
-/*  this is for all the elements in the html file 
-    Here we chose to set zero distance between the
-    browser borders and the elements borders
-*/
-html, body {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
 
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-
-    background-color: rgb(247, 251, 255);
-}
-
-body main {
-    margin: 10px;   /* Space outside the border */
-    padding: 10px;  /* Space inside the border, between content and border */
-
-    flex: 1; /* Fills available space */
-}
-
-.header-links nav ul li #contact_me {
-    border-top: 5px solid white;
-    padding-top: 18px;
+.navigations nav ul li #contact_me {
     font-weight: bold;
 }
 
-.header-menu nav ul li #contact_me {
-    font-weight: bold;
+#page-title-contact {
+    max-width: 500px;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow:none
 }
 
-section {
+.section-contact {
     max-width: 500px;
     margin: 20px auto;
     padding: 20px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-#page-title {
-    max-width: 500px;
-    font-size: 30px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow:none
 }
 
 
@@ -98,12 +65,12 @@ input, textarea {
 
 button {
     padding: 10px;
-    background-color: rgb(1, 1, 189);
+    background-color: #101010;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: blue;
+    background-color: #202020;
 }

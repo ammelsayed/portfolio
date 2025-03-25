@@ -20,7 +20,7 @@ function fetchJSONData() {
             pubElement.innerHTML =`  
                     <section class="publication-container">
                         <div class="publication-content">
-                            <p style="color: red;"><em><b>${pub.paper_type}</b></em></p>
+                            <p style="color: red;"><em><b>${pub.paper_type}</b></em><br></p>
                             <h2>${pub.title}</h2>
                             <p><em>${pub.date}, ${pub.journal}</em></p>
                             <p id="abstract"><b>Abstract:</b> ${pub.description}</p>
