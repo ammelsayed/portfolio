@@ -11,7 +11,7 @@
 
 footer {
     width: 100%; /* To take all width of the page */
-    height: 50px;
+    height: 60px;
   
     display: flex;
     flex-direction: row; /* Items are placed left to right. */
@@ -24,7 +24,7 @@ footer {
 .inner-footer {
     width: 1000px;
     height: 100%;
-    padding: 0px 40px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: row; /* Items are placed left to right. */
     justify-content: space-between;   /*  Aligns flex items along the main axis (defined by flex-direction). */
@@ -79,7 +79,7 @@ footer p a {
     }
 
     footer p {
-        font-size: 8px;
+        font-size: 9px;
     }
   }
 

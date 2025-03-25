@@ -11,3 +11,35 @@
 .navigations nav ul li #home {
     font-weight: bold;
 }
+
+#greetings {
+    max-width: 1000px;
+    min-width: 0;
+    font-size: 40px;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    color: black;
+    letter-spacing: 0;
+    font-weight: 100;
+    text-shadow: none;
+    /* Define transitions for all changing properties */
+    transition: letter-spacing 0.5s ease, font-size 1s ease, text-shadow 1s ease;
+}
+
+@media screen and (min-width: 550px) {
+
+    #greetings:hover {
+        letter-spacing: 0.1em; /* Expand letter spacing */
+        font-size: 45px;
+        text-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+}
+
+@media screen and (max-width: 550px) {
+
+    #greetings {
+        font-size: 30px;
+    }
+
+}

@@ -29,7 +29,7 @@ header {
 .inner-header {
   width: 1000px;
   height: 100%;
-  padding: 0px 40px;
+  padding: 0px 20px;
   display: flex;
   flex-direction: row; /* Items are placed left to right. */
   justify-content: space-between;   /*  Aligns flex items along the main axis (defined by flex-direction). */

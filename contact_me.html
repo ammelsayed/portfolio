@@ -23,7 +23,6 @@
     <!--Header and footer stylings-->
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/footer.css">
-    <link rel="stylesheet" href="styles/bodies.css">
 
 </head>
 
@@ -33,12 +32,12 @@
     <script type="module" src="styles/header.js"></script>
     <script src="menu.js"></script>
 
-    <main>
-        <section id="page-title-contact">
+    <main> 
+        <div id=page-title-contact>
             <h1>Reach Out to me!</h1>
-        </section>
+        </div>
         <!-- New Contact Details Section -->
-        <section id="contact-details" class="section-contact">
+        <section class="section-contact" id="contact-details">
             <div class="info-item">
                 <img id="email-icon" src="" alt="Email Icon">
                 <span id="email"></span>
@@ -52,15 +51,20 @@
                 <span id="address"></span>
             </div>
         </section>
+
         <section class="section-contact">
-            <h4>DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</h4>
+            <h4>DISCUSS A PROJECT OR JUST WANT TO SAY HI? <br> MY INBOX IS OPEN FOR ALL.</h4>
             <form id="contact-form" action="https://formspree.io/f/mvgkkbvg?" method="POST">
+                
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
+
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
+
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
+
                 <button type="submit">Send</button>
                 <p id="contact-form-status"></p>
               </form>
