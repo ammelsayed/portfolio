@@ -18,8 +18,7 @@ function fetchJSONData() {
             const pubElement = document.createElement('div');
             pubElement.classList.add('publication');
             pubElement.innerHTML =`  
-                    <section class="publication-container">
-                        <div class="publication-content">
+                        <div class="content">
                             <p style="color: navy;"><em><b>${pub.paper_type}</b></em></p>
                             <h2>${pub.title}</h2>
                             <p><em>${pub.date}, ${pub.journal}</em></p>
@@ -27,7 +26,6 @@ function fetchJSONData() {
                             <p id="doi-link"><b>DOI:</b> <a href="${pub.link}" target="_blank">${pub.link}</a></p>
                         </div>
                         <img src="${pub.image_soruce}" class="publication-image">
-                    </section>
             `;
             publicationsList.appendChild(pubElement);
             });
