@@ -168,3 +168,8 @@ body main {
     }
 }
 
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
