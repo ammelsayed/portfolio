@@ -57,7 +57,7 @@ section p{
     font-weight: 100;
     text-shadow: none;
     /* Define transitions for all changing properties */
-    transition: letter-spacing 2s ease, font-size 3s ease, text-shadow 3s ease;
+    transition: letter-spacing 0.5s ease, font-size 1s ease, text-shadow 1s ease;
 }
 
 #greetings:hover {
