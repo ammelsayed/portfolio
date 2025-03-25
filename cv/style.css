@@ -8,49 +8,7 @@
     browser borders and the elements borders
 */
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column; /* Items are placed left to right. */
-    flex-wrap: nowrap;  /*  Items will not wrap. */
-    justify-content: center;   /*  Aligns flex items along the main axis (defined by flex-direction). */
-    background-color: white;
-}
-
-body main {
-    width: 100%;
-    height: 100%;
-    margin: 10px;   /* Space outside the border */
-    padding: 10px;  /* Space inside the border, between content and border */
-    flex: 1; /* Fills available space */
-}
 
 .navigations nav ul li #cv {
     font-weight: bold;
-}
-
-section {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-#page-title {
-    max-width: 1000px;
-    font-size: 30px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    background-color: rgba(0, 0, 0, 0);
-    box-shadow:none
-}
-
-section p{
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
 }

@@ -39,7 +39,7 @@ class MyHeader extends HTMLElement {
                         </li>
                         <li>
                             <a href="./cv.html" id="cv">
-                                CV
+                                Resume
                             </a>
                         </li>
                         <li>
@@ -92,7 +92,7 @@ class MyHeader extends HTMLElement {
                                 </li>
                                 <li>
                                     <a href="./cv.html" id="cv">
-                                        CV
+                                        Resume
                                     </a>
                                 </li>
                                 <li>
@@ -106,7 +106,7 @@ class MyHeader extends HTMLElement {
                 </div>
             </div>
         </div>
-    </header>
+        </header>
     `
     }
 }

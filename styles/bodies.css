@@ -40,5 +40,32 @@ section {
 }
 
 section p{
-    font-size: 15px;
+    font-size: 18px;
 }
+
+/* %-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-% */
+/*   Special Styling for Home Page   */
+/* %-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-% */
+
+#greetings {
+    max-width: 1000px;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: none;
+    color: black;
+    letter-spacing: 0;
+    font-weight: 100;
+    text-shadow: none;
+    /* Define transitions for all changing properties */
+    transition: letter-spacing 2s ease, font-size 3s ease, text-shadow 3s ease;
+}
+
+#greetings:hover {
+    letter-spacing: 0.1em; /* Expand letter spacing */
+    font-size: 60px;
+    text-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* %-%-%-%-%-%-%-%-%-%-%-%-%-%-%-%-% */
+
+

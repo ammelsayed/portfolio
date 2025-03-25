@@ -13,35 +13,19 @@ document.addEventListener("DOMContentLoaded", function() {
     header.style.backgroundColor = color;
   }
 
-  // Toggle the menu on button click, update active state, and header background
-  btn.addEventListener('click', function(e) {
-    e.stopPropagation();
-    if (menu.classList.contains('visible')) {
-      menu.classList.remove('visible');
-      btn.style.borderRadius = '20px';
-      btn.classList.remove('active');
-      setHeaderBackground('#101010'); // Reset header background
-    } else {
-      menu.classList.add('visible');
-      btn.style.borderRadius = '40px';
-      btn.classList.add('active');
-      setHeaderBackground('#202020'); // Match button's background
-    }
-  });
-
-  // When mouse hovers over the button, show the menu and update header background
+  // Show the menu and update header background when mouse hovers over the button
   btn.addEventListener('mouseenter', function() {
     menu.classList.add('visible');
     btn.style.borderRadius = '40px';
     btn.classList.add('active');
-    setHeaderBackground('#202020');
+    setHeaderBackground('#202020'); // Change header to button's background color
   });
 
-  // When mouse leaves the header-menu area, hide the menu, reset styles, and header background
+  // When mouse leaves the header-menu area, hide the menu and reset styles and header background
   headerMenu.addEventListener('mouseleave', function() {
     menu.classList.remove('visible');
     btn.style.borderRadius = '20px';
     btn.classList.remove('active');
-    setHeaderBackground('#101010');
+    setHeaderBackground('#101010'); // Reset header background to original
   });
 });
