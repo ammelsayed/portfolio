@@ -88,10 +88,19 @@ body main {
     height: auto;
 }
 
+#publications-list .publication .content p {
+    margin-bottom: 5px;   
+}
+
+#publications-list .publication .content h2 {
+    margin-bottom: 20px;   
+}
+
 
 #publications-list .publication .content #abstract{
     font-size: 15px;
     text-align: justify;
+    margin-bottom: 10px;  
 }
 
 

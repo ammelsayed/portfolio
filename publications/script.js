@@ -32,13 +32,9 @@ function displayPublications(data) {
         pubElement.innerHTML = `
             <div class="content">
                 <p style="color: navy;"><em><b>${pub.paper_type}</b></em></p>
-                <br>
                 <h2>${pub.title}</h2>
-                <br>
                 <p><em>${pub.date}, ${pub.journal}</em></p>
-                <br>
                 <p id="abstract"><b>Abstract:</b> ${pub.description}</p>
-                <br>
                 <p id="doi-link"><b>DOI:</b> <a href="${pub.link}" target="_blank">${pub.link}</a></p>
             </div>
             <img src="${pub.image_soruce}" class="publication-image">
