@@ -122,15 +122,11 @@ header {
   transition: border-top 0.8s ease, font-weight 0.2s ease, font-size 0.3s ease;
 }
 
-.navigations nav ul li a:last-child {
-  padding-right: 0px;
-  margin-right: 0px;
-}
 
 .navigations nav ul li a:hover {
     border-top: 3px solid white;
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 18px;
   }
 
 /*%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
