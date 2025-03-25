@@ -72,7 +72,15 @@ body main {
     margin: 20px 0px;
     background-color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease-in-out, box-shadow 0.5s ease;
 }
+
+#publications-list .publication:hover {
+    background-color: rgb(251, 251, 251);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    transform: scale(1.02);
+}
+
 
 #publications-list .publication .content {
     margin: 20px;
