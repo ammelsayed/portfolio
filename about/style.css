@@ -19,15 +19,14 @@
     display: flex;
     flex-direction: row; 
     justify-content:flex-start;   
-    align-items: center; 
-    flex-wrap: wrap;
-    border-top: 0.01cm solid black;
+    align-items: stretch; 
+    border-bottom: 0.01cm solid black;
     background-color: none;
     transition: background-color 0.1s ease;
 }
 
 .PROG-LANG-TABLE .PROG-LANG-CATEGORY:last-child{
-    border-bottom: 0.01cm solid black;
+    border-bottom: none;
 }
 
 .PROG-LANG-TABLE .PROG-LANG-CATEGORY:hover{
@@ -40,8 +39,8 @@
     justify-content:center;   
     align-items: center; 
     width: 100%;
+    max-width: 150px;
     padding: 14px;
-    max-width: 100px;
 }
 
 .PROG-LANG-TABLE .PROG-LANG-CATEGORY .CATEGORY-TITLE spam{
@@ -54,7 +53,7 @@
     justify-content:flex-start;   
     align-items: center; 
     width: 100%;
-    max-width: 100px;
+    max-width: 90px;
     padding: 15px;
 }
 
@@ -63,11 +62,16 @@
     max-height: 40px;
 }
 
-@media screen and (max-width: 400px) {
-    .PROG-LANG-TABLE .PROG-LANG-CATEGORY .CATEGORY-TITLE{
-        max-width: 400px;
-        border-bottom: 0.01cm solid black;
-        background-color: rgb(245, 245, 245);
+@media screen and (max-width: 900px) {
+
+    .PROG-LANG-TABLE .PROG-LANG-CATEGORY{
+        flex-wrap: wrap;
+        justify-content:center; 
+        border-bottom: none;
     }
 
-  }
+    .PROG-LANG-TABLE .PROG-LANG-CATEGORY .CATEGORY-TITLE{
+        max-width: 800px;
+        background-color: rgb(245, 245, 245);
+    }
+}
