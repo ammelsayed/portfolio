@@ -53,6 +53,7 @@ section {
     max-width: 500px;
     min-width: 0;
     margin: 20px 0px;
+    padding: 20px 40px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     color: black;
     display: flex;
@@ -66,11 +67,12 @@ section .info-item {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 30px;
-    padding: 20px 20px;
+    gap: 20px;
+    padding: 10px 0px;
 }
 
 section .info-item p {
+    font-size: 18px;
     padding-bottom: 5px;
     word-wrap: break-word;
     overflow-wrap: break-word;
@@ -81,23 +83,23 @@ section .info-item img {
     height: 18px;
 }
 
-section h4 {
-    padding: 20px 20px 0px 20px;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-
 
 /*---------------------------------------*/ 
 
 
 section form {
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
-    padding: 20px;
-    gap: 10px;
+    padding: 20px 0px;
+    gap: 15px;
+}
+
+section form label {
+    font-size: 18px;
+    font-weight: 500;
 }
 
 input, textarea {
@@ -113,12 +115,12 @@ input[type="text"], input[type="email"] {
 textarea {
     height: 150px; /* Controlled height for the Message field */
     padding: 5px;
-    width: auto;
-    max-width: 460px;
+    max-width: 500px;
 }
 
 #form-button {
     margin-top: 20px;
+    font-size: 18px;
     background-color: #101010;
     height: 100%;
     max-height: 50px;
