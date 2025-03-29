@@ -42,12 +42,11 @@ class MyHeader extends HTMLElement {
                                 Resume
                             </a>
                         </li>
-
-                    <!--     <li>       -->
-                    <!--        <a href="./contact_me.html" id="contact_me">        -->
-                    <!--             Contact  -->
-                    <!--         </a>       -->
-                    <!--     </li>      -->
+                        <li>       
+                           <a href="./contact_me.html" id="contact_me">        
+                                Contact  
+                           </a>       
+                        </li>      
 
                     </ul>
                 </nav>
@@ -98,12 +97,11 @@ class MyHeader extends HTMLElement {
                                     </a>
                                 </li>
 
-                                                    <!--     <li>       -->
-                    <!--        <a href="./contact_me.html" id="contact_me">        -->
-                    <!--             Contact  -->
-                    <!--         </a>       -->
-                    <!--     </li>      -->
-
+                                <li>      
+                                    <a href="./contact_me.html" id="contact_me">      
+                                         Contact  
+                                    </a>      
+                                </li>     
                             </ul>
                         </nav>
                     </div>

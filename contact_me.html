@@ -33,41 +33,42 @@
     <script src="menu.js"></script>
 
     <main> 
-        <div id=page-title-contact>
+        <div class=page-top>
             <h1>Reach Out to me!</h1>
         </div>
         <!-- New Contact Details Section -->
-        <section class="section-contact" id="contact-details">
+        <section>
             <div class="info-item">
                 <img id="email-icon" src="" alt="Email Icon">
-                <span id="email"></span>
+                <p id="email"></p>
             </div>
             <div class="info-item">
                 <img id="phone-icon" src="" alt="Phone Icon">
-                <span id="phone"></span>
+                <p id="phone"></p>
             </div>
             <div class="info-item">
                 <img id="address-icon" src="" alt="Address Icon">
-                <span id="address"></span>
+                <p id="address"></p>
             </div>
         </section>
 
         <section class="section-contact">
             <h4>DISCUSS A PROJECT OR JUST WANT TO SAY HI? <br> MY INBOX IS OPEN FOR ALL.</h4>
+
             <form id="contact-form" action="https://formspree.io/f/mvgkkbvg?" method="POST">
-                
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send</button>
-                <p id="contact-form-status"></p>
-              </form>
+                    
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+    
+                    <button type="submit" id="form-button">Send</button>
+                    <p id="contact-form-status"></p>
+                  </form>
         </section>
     </main>
         
