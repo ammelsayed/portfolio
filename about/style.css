@@ -7,3 +7,67 @@
     font-weight:350;
 }
 
+/* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+
+.PROG-LANG-TABLE {
+    padding: 20px;
+    width: 100%;
+}
+
+.PROG-LANG-TABLE .PROG-LANG-CATEGORY{
+    display: flex;
+    flex-direction: row; 
+    justify-content:flex-start;   
+    align-items: center; 
+    flex-wrap: wrap;
+    border-top: 0.01cm solid black;
+    background-color: none;
+    transition: background-color 0.1s ease;
+}
+
+.PROG-LANG-TABLE .PROG-LANG-CATEGORY:last-child{
+    border-bottom: 0.01cm solid black;
+}
+
+.PROG-LANG-TABLE .PROG-LANG-CATEGORY:hover{
+    background-color: rgb(250, 250, 250);
+}
+
+.PROG-LANG-TABLE .PROG-LANG-CATEGORY .CATEGORY-TITLE{
+    display: flex;
+    flex-direction: column; 
+    justify-content:center;   
+    align-items: center; 
+    width: 100%;
+    padding: 14px;
+    max-width: 100px;
+}
+
+.PROG-LANG-TABLE .PROG-LANG-CATEGORY .CATEGORY-TITLE spam{
+    font-weight: bold;
+}
+
+.PROG-LANG-TABLE .PROG-LANG-CATEGORY .CATEGORY-CONTENT {
+    display: flex;
+    flex-direction: column; 
+    justify-content:flex-start;   
+    align-items: center; 
+    width: 100%;
+    max-width: 100px;
+    padding: 15px;
+}
+
+.PROG-LANG-TABLE .PROG-LANG-CATEGORY .CATEGORY-CONTENT img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+@media screen and (max-width: 400px) {
+    .PROG-LANG-TABLE .PROG-LANG-CATEGORY .CATEGORY-TITLE{
+        max-width: 400px;
+        border-bottom: 0.01cm solid black;
+        background-color: rgb(245, 245, 245);
+    }
+
+  }
